@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRD Status Check — Track Your Social Relief of Distress Grant (2026)</title>
+<meta name="description" content="Check your SRD grant status the right way: what pending, approved and declined mean, the four official check-in methods, and what to do next.">
+<link rel="canonical" href="https://scsrd.co.za/srd-status-check">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the SRD grant?",
+     "acceptedAnswer": {"@type": "Answer", "text": "SRD stands for Social Relief of Distress, a monthly payment from SASSA for people with little or no income, currently paid as the R370 grant."}},
+    {"@type": "Question", "name": "Where do I check my SRD status?",
+     "acceptedAnswer": {"@type": "Answer", "text": "On the official SASSA SRD portal, using your ID number and the phone number registered on your application, or through the WhatsApp, USSD and call-centre alternatives."}},
+    {"@type": "Question", "name": "Why is my SRD status still pending after weeks?",
+     "acceptedAnswer": {"@type": "Answer", "text": "SASSA cross-checks every application against other databases each cycle. A long pending status can mean a data mismatch, so it's worth calling the SASSA line to confirm your registered details."}},
+    {"@type": "Question", "name": "Do I need to reapply every month?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No — once approved, SASSA re-assesses your existing application automatically each month. You only need to check the status, not reapply, unless SASSA tells you otherwise."}}
+  ]
+}
+</script>
+<style>
+  :root{
+    --teal:#0E4F52; --teal-deep:#0A3A3C; --coral:#E4562E; --coral-soft:#F6C9B4;
+    --paper:#FBF6EF; --paper-deep:#F1E8D8; --line:#D8CBB0; --ink:#22302E;
+    --serif:'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+    --sans:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;}
+  .wrap{max-width:780px;margin:0 auto;padding:0 20px;}
+
+  .top-strip{background:var(--teal-deep);color:#DCEFEF;font-size:13px;padding:9px 0;text-align:center;}
+  .top-strip strong{color:var(--coral-soft);}
+
+  header{padding:40px 0 30px;text-align:center;background:radial-gradient(120% 160% at 50% 0%, var(--coral-soft) 0%, var(--paper) 55%);}
+  header .badge{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:999px;text-transform:uppercase;}
+  header h1{font-family:var(--serif);font-size:clamp(30px,6vw,48px);margin:16px 0 10px;color:var(--teal-deep);}
+  header p{max-width:52ch;margin:0 auto;color:#3d4d4a;font-size:16px;}
+
+  .rings{display:flex;justify-content:center;gap:26px;margin-top:26px;flex-wrap:wrap;}
+  .ring{text-align:center;width:120px;}
+  .ring .circle{width:74px;height:74px;border-radius:50%;border:4px solid var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-family:var(--serif);font-weight:700;font-size:22px;color:var(--teal-deep);background:#fff;}
+  .ring .label{font-size:12px;color:#556;}
+
+  section{padding:36px 0;}
+  h2{font-family:var(--serif);color:var(--teal-deep);font-size:26px;margin-bottom:14px;}
+
+  .method-cards{display:grid;gap:14px;grid-template-columns:1fr;}
+  @media(min-width:680px){.method-cards{grid-template-columns:1fr 1fr;}}
+  .method-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;}
+  .method-card h3{margin:0 0 6px;color:var(--coral);font-size:16px;}
+  .method-card p{margin:0;font-size:14.5px;color:#3d4d4a;}
+
+  .timeline{border-left:3px solid var(--coral);margin-left:8px;padding-left:22px;}
+  .tl-item{position:relative;padding-bottom:22px;}
+  .tl-item::before{content:'';position:absolute;left:-28px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--teal);}
+  .tl-item h4{margin:0 0 4px;font-size:16px;}
+  .tl-item p{margin:0;color:#3d4d4a;font-size:14.5px;}
+
+  .callout{background:var(--teal);color:#EAF6F5;border-radius:16px;padding:24px;text-align:center;}
+  .callout a.button{display:inline-block;margin-top:14px;background:var(--coral);color:#fff;text-decoration:none;padding:13px 28px;border-radius:999px;font-weight:700;}
+  .callout .fine{font-size:12px;color:#BFDAD8;margin-top:10px;}
+
+  .faq{border-top:1px solid var(--line);padding-top:10px;}
+  details{border-bottom:1px solid var(--line);padding:14px 0;}
+  summary{cursor:pointer;font-weight:700;color:var(--teal-deep);}
+  details p{color:#3d4d4a;margin:8px 0 0;}
+
+  footer{padding:26px 0 44px;font-size:13px;color:#6b7876;text-align:center;}
+  footer a{color:var(--teal-deep);}
+</style>
+</head>
+<body>
+
+<div class="top-strip"><strong>Independent guide</strong> — always confirm and apply at srd.sassa.gov.za</div>
+
+<header>
+  <div class="wrap">
+    <span class="badge">SRD Grant Guide</span>
+    <h1>SRD Status Check</h1>
+    <p>Everything the SRD (Social Relief of Distress) status result means, and the four official ways to see it — explained without the jargon.</p>
+    <div class="rings">
+      <div class="ring"><div class="circle">Web</div><div class="label">Official portal</div></div>
+      <div class="ring"><div class="circle">Chat</div><div class="label">WhatsApp</div></div>
+      <div class="ring"><div class="circle">#</div><div class="label">USSD dial</div></div>
+      <div class="ring"><div class="circle">Call</div><div class="label">Helpline</div></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What SRD actually means</h2>
+    <p>SRD stands for <strong>Social Relief of Distress</strong> — a monthly grant from SASSA aimed at people with little or no income, currently paid out as the R370 grant. Once you've applied, "checking your SRD status" simply means asking SASSA's system whether that month's application was approved, is still pending, or was declined. For the full site, visit <a href="https://scsrd.co.za/">SRD Status Check</a>.</p>
+  </div>
+</section>
+
+<section style="background:var(--paper-deep);">
+  <div class="wrap">
+    <h2>Four ways to check</h2>
+    <div class="method-cards">
+      <div class="method-card"><h3>Official website</h3><p>srd.sassa.gov.za — enter your ID number and the phone number registered on your application.</p></div>
+      <div class="method-card"><h3>WhatsApp</h3><p>Message SASSA's official WhatsApp number and follow the prompts from the automated assistant.</p></div>
+      <div class="method-card"><h3>USSD code</h3><p>Dial the current SASSA status code from your registered phone — no data needed.</p></div>
+      <div class="method-card"><h3>Call centre</h3><p>Phone the toll-free SASSA line on weekdays if your online check won't load or looks wrong.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>From application to payment</h2>
+    <div class="timeline">
+      <div class="tl-item"><h4>1. You apply or you're already active</h4><p>Your SRD application stays on file — SASSA re-checks it every month rather than asking you to reapply.</p></div>
+      <div class="tl-item"><h4>2. Monthly re-verification</h4><p>Your ID is checked against Home Affairs, SARS and bank records to confirm you still qualify.</p></div>
+      <div class="tl-item"><h4>3. Status is set</h4><p>Approved, pending, or declined — visible through any of the four channels above.</p></div>
+      <div class="tl-item"><h4>4. Payment (if approved)</h4><p>A payment date is issued and funds are released through your chosen payment method. For the broader SASSA picture, see <a href="https://scsrd.co.za/">SASSA Status Check</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-deep);">
+  <div class="wrap faq">
+    <h2>Questions people ask</h2>
+    <details><summary>What is the SRD grant?</summary><p>A SASSA payment for South Africans with little or no other income, currently disbursed as the R370 grant.</p></details>
+    <details><summary>Where do I check my SRD status?</summary><p>On the official SRD portal with your ID and registered phone number, or via WhatsApp, USSD, or the call centre.</p></details>
+    <details><summary>Why is my status still pending after weeks?</summary><p>It usually means a details mismatch during the monthly cross-check — calling the SASSA line can confirm what's registered against your ID.</p></details>
+    <details><summary>Do I need to reapply every month?</summary><p>No. SASSA re-assesses your existing application automatically; you just check the result.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="callout">
+      <h2 style="color:#fff;">Check your own SRD status now</h2>
+      <p>Head to the official portal and confirm this month's result.</p>
+      <a class="button" href="https://srd.sassa.gov.za" target="_blank" rel="noopener">Open srd.sassa.gov.za →</a>
+      <p class="fine">This link takes you to SASSA's own site, outside this guide.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Independent, unofficial information guide. No personal data is collected on this page. For applications and official checks, use <a href="https://srd.sassa.gov.za" target="_blank" rel="noopener">srd.sassa.gov.za</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
